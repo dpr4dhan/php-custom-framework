@@ -2,10 +2,12 @@
 
 namespace App\Controllers;
 
+use App\View;
+
 class Invoice
 {
     public function index(): string
     {
-        return 'Invoice';
+        return View::make('invoices/index', 'layouts/app-layout');
     }
 }
